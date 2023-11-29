@@ -12,7 +12,10 @@ class Point3D
         Y = y;
         Z = z;
     }
-
+ public Point3D()
+        Console.WriteLine("Об'єкт Point3D буде знищений.");
+    }
+}
     public bool HasIntegerCoordinates()
     {
         return X % 1 == 0 && Y % 1 == 0 && Z % 1 == 0;
