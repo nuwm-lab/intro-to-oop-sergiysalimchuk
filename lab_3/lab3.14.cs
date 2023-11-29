@@ -13,12 +13,12 @@ class Point3D
         Z = z;
     }
 
-    public bool AreCoordinatesInteger()
+    public bool HasIntegerCoordinates()
     {
         return X % 1 == 0 && Y % 1 == 0 && Z % 1 == 0;
     }
 
-    public bool IsInFirstOctant()
+    public bool IsInFirstOctantOfSpace()
     {
         return X > 0 && Y > 0 && Z > 0;
     }
@@ -41,7 +41,7 @@ class Program
 
         foreach (Point3D point in points)
         {
-            if (point.AreCoordinatesInteger() && point.IsInFirstOctant())
+            if (point.HasIntegerCoordinates() && point.IsInFirstOctantOfSpace())
             {
                 countIntegerCoordinatesAndInFirstOctant++;
             }
