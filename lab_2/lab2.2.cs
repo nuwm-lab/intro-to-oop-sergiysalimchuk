@@ -1,6 +1,6 @@
 using System;
 
-class Point3D
+public class Point3D
 {
     public int X { get; set; }
     public int Y { get; set; }
@@ -24,7 +24,7 @@ class Point3D
     }
 }
 
-class Program
+public class Program
 {
     static void Main(string[] args)
     {
